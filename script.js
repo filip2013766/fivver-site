@@ -6,8 +6,8 @@ document.getElementById("jobForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    "TVOJ_SERVICE_ID",
-    "TVOJ_TEMPLATE_ID",
+    "service_godrift",
+    "template_07uaxtk",
     this
   ).then(
     function() {
