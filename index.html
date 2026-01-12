@@ -2,22 +2,25 @@
 <html lang="sr">
 <head>
   <meta charset="UTF-8">
-  <title>Prijava za posao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijava za rad</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
+
   <h1>Prijava za rad u našem timu</h1>
   <p class="subtitle">Izaberi poziciju i pošalji prijavu</p>
 
+  <!-- FORMULAR -->
   <form id="jobForm">
 
     <label>Ime i prezime</label>
-    <input type="text" name="name" required>
+    <input type="text" name="name" placeholder="Unesite vaše ime" required>
 
     <label>Email</label>
-    <input type="email" name="email" required>
+    <input type="email" name="email" placeholder="Unesite vaš email" required>
 
     <label>Pozicija</label>
     <select name="position" required>
@@ -35,7 +38,7 @@
     </select>
 
     <label>Očekivana plata (€)</label>
-    <input type="number" name="salary">
+    <input type="number" name="salary" placeholder="Unesite iznos">
 
     <label>Način isplate</label>
     <select name="payment" required>
@@ -47,16 +50,26 @@
     </select>
 
     <label>Zašto želiš da radiš kod nas? (min 100 karaktera)</label>
-    <textarea name="message" minlength="100" required></textarea>
+    <textarea name="message" placeholder="Opišite vašu motivaciju..." minlength="100" required></textarea>
 
     <button type="submit">Pošalji prijavu</button>
   </form>
 
   <p class="info">
-    Ako želiš veću platu, možeš poslati zahtev na  
+    Ako želite veću platu, možete poslati zahtev na  
     <b>srdanov.filip2013@gmail.com</b><br>
     Odgovor se čeka 2–3 dana.
   </p>
+
+</div>
+
+<!-- FW LOGO I DUGME NA DNU STRANICE -->
+<div class="footer-logo-container">
+  <img src="fw-logo.png" alt="FW Logo" class="footer-logo">
+
+  <a href="https://www.fiverr.com/sellers/filip_srdanov23/edit" target="_blank" class="footer-button">
+    Poseti moj Fiverr profil
+  </a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
